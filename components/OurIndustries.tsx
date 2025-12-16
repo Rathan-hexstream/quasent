@@ -79,6 +79,7 @@ export default function OurIndustriesSection() {
                 {industries.map((industry, index) => (
                     <motion.div
                         key={industry.name}
+                        tabIndex={0}
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -97,12 +98,15 @@ export default function OurIndustriesSection() {
                         {/* CONTENT LAYER */}
                         <div className="absolute inset-0 flex flex-col justify-end p-6 pointer-events-none">
                             {/* SUBLINKS appear ABOVE heading, only on hover */}
-                            <ul className="
-                                mb-2 space-y-1 text-sm text-gray-200
-                                opacity-0 max-h-0 overflow-hidden
-                                transition-all duration-300
-                                group-hover:opacity-100 group-hover:max-h-40
-                            ">
+                            <ul
+                                className="
+                                            mb-2 space-y-1 text-sm text-gray-200
+                                            opacity-0 max-h-0 overflow-hidden
+                                            transition-all duration-300
+                                            group-hover:opacity-100 group-hover:max-h-40
+                                            group-focus-within:opacity-100 group-focus-within:max-h-40
+                                        "
+                            >
                                 {industry.sublinks.map((item) => (
                                     <li key={item} className="flex items-center gap-2">
                                         <span className="text-xs font-medium">›</span>
