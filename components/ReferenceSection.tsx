@@ -62,11 +62,11 @@ export default function CareerSection() {
                                 className="w-full h-[430px] object-cover transition-transform duration-700 group-hover:scale-110"
                             />
 
-                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700">
+                            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 pointer-events-none">
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/25 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] duration-[1200ms]" />
                             </div>
 
-                            <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-all duration-500" />
+                            <div className="absolute inset-0 bg-white/0 group-hover:bg-white/10 transition-all duration-500 pointer-events-none" />
 
                             {/* Default Content */}
                             <div className="absolute bottom-10 left-8 text-white transition-all duration-500 group-hover:translate-y-[-25px]">
