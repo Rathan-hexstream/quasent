@@ -40,10 +40,10 @@ export default function MarketInsights() {
     return (
         <section
             className="
-        relative w-full overflow-hidden
-        bg-cover bg-center bg-fixed
-        py-20
-      "
+                        relative w-full overflow-hidden overflow-x-hidden
+                        bg-cover bg-center bg-scroll md:bg-fixed
+                        py-20
+                      "
             style={{ backgroundImage: `url('/images/insights/market-bg.jpeg')` }}
         >
             <div className="absolute inset-0 bg-black/70 backdrop-blur-[2px]" />
@@ -79,9 +79,9 @@ export default function MarketInsights() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/60 to-black/25" />
 
                     <div className="absolute inset-0 flex flex-col justify-end p-8">
-            <span className="text-sm font-semibold text-amber-300">
-              {insights[0].category}
-            </span>
+                        <span className="text-sm font-semibold text-amber-300">
+                          {insights[0].category}
+                        </span>
                         <h3 className="mt-2 text-3xl font-bold text-white">
                             {insights[0].title}
                         </h3>
@@ -112,9 +112,9 @@ export default function MarketInsights() {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/60 to-black/30" />
 
                             <div className="absolute inset-0 flex flex-col justify-end p-5">
-                <span className="text-xs font-semibold text-blue-300">
-                  {item.category}
-                </span>
+                                <span className="text-xs font-semibold text-blue-300">
+                                  {item.category}
+                                </span>
                                 <h4 className="mt-1 text-lg font-semibold text-white">
                                     {item.title}
                                 </h4>
