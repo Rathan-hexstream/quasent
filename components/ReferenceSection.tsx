@@ -14,7 +14,7 @@ const cardVariants: Variants = {
 
 export default function CareerSection() {
     return (
-        <section className="w-full py-20 relative overflow-hidden">
+        <section className="w-full py-20 relative overflow-hidden overflow-x-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[#F7ECFF] via-[#FFE8F3] to-[#E9FBFF]" />
             <div className="absolute inset-0 backdrop-blur-[10px] bg-white/55 shadow-[0_0_40px_rgba(0,0,0,0.05)]" />
 
