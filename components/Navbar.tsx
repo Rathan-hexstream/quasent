@@ -64,42 +64,8 @@ export default function Navbar() {
                             <button className="flex items-center gap-2">
                                 <FaBriefcase className="text-purple-500" />
                                 Roles We Staff
-                                <FaChevronDown className="text-xs text-gray-500" />
+                                {/*<FaChevronDown className="text-xs text-gray-500" />*/}
                             </button>
-
-                            {/* DROPDOWN */}
-                            <div
-                                ref={dropdownRef}
-                                className={`
-                  absolute left-0 top-full mt-2 w-72 bg-white rounded-md shadow-lg border p-4
-                  transition-all
-                  ${openDropdown === "roles" ? "opacity-100 visible" : "opacity-0 invisible"}
-                `}
-                            >
-                                <ul className="space-y-3 text-sm">
-
-                                    <li className="flex items-center gap-3">
-                                        <FaUserCog className="text-indigo-500" />
-                                        Engineers & Technical Roles
-                                    </li>
-
-                                    <li className="flex items-center gap-3">
-                                        <FaUser className="text-green-500" />
-                                        Field Technicians
-                                    </li>
-
-                                    <li className="flex items-center gap-3">
-                                        <FaStar className="text-yellow-500" />
-                                        Project Managers
-                                    </li>
-
-                                    <li className="flex items-center gap-3">
-                                        <FaPlusCircle className="text-pink-500" />
-                                        More Specialized Roles
-                                    </li>
-
-                                </ul>
-                            </div>
                         </li>
 
                         <li className="flex items-center gap-2">
